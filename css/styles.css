@@ -64,7 +64,7 @@ a {
 a:link {
   text-decoration: none;
   transition: color 250ms var(--cubic-bezier),
-    border-color 250ms var(--cubic-bezier);
+    background-color 250ms var(--cubic-bezier);
 }
 
 a:hover,
@@ -107,24 +107,17 @@ a:focus {
 .logo-white {
   color: var(--white-color);
 }
-/* .logo-white:hover,
-.logo-white:focus,
-.logo-black:hover,
-.logo-black:focus {
-  color: var(--blue-color);
-  transition: color 250ms var(--cubic-bezier),
-    border-color 250ms var(--cubic-bezier); }*/
 
 .logo:hover .logo-black {
   color: var(--blue-color);
   transition: color 250ms var(--cubic-bezier),
-    border-color 250ms var(--cubic-bezier);
+    background-color 250ms var(--cubic-bezier);
 }
 
 .logo:hover .logo-white {
   color: var(--blue-color);
   transition: color 250ms var(--cubic-bezier),
-    border-color 250ms var(--cubic-bezier);
+    background-color 250ms var(--cubic-bezier);
 }
 
 .group-header {
@@ -200,7 +193,7 @@ button {
   color: var(--blue-color);
   background-color: var(--white-color);
   transition: color 250ms var(--cubic-bezier),
-    border-color 250ms var(--cubic-bezier);
+    background-color 250ms var(--cubic-bezier);
 }
 
 .our-strengths-text {
@@ -279,7 +272,7 @@ button {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: color 250ms var(--cubic-bezier),
-    border-color 250ms var(--cubic-bezier);
+    background-color 250ms var(--cubic-bezier);
 }
 .description-person {
   background: var(--light-gray-color);
@@ -355,7 +348,7 @@ button {
   color: var(--blue-color);
   border: 1px solid var(--blue-color);
   transition: color 250ms var(--cubic-bezier),
-    border-color 250ms var(--cubic-bezier);
+    background-color 250ms var(--cubic-bezier);
 }
 .customers-icon-box {
   box-sizing: border-box;
