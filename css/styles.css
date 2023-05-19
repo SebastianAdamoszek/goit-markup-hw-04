@@ -9,9 +9,11 @@
   --logo-black-color: #000000;
   --bg-team-white-color: #f4f5fa;
   --light-gray-text-color: rgba(255, 255, 255, 0.6);
-  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
   --banner-background: rgba(47, 48, 58, 0.4);
   --grey-transparent-background: rgba(47, 48, 58, 0.8);
+  --transition:  color 250ms var(--cubic-bezier),
+                background-color 250ms var(--cubic-bezier);
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   font-family: "roboto", sans-serif;
@@ -63,8 +65,7 @@ a {
 }
 a:link {
   text-decoration: none;
-  transition: color 250ms var(--cubic-bezier),
-    background-color 250ms var(--cubic-bezier);
+  transition: var(--transition);
 }
 
 a:hover,
@@ -110,14 +111,12 @@ a:focus {
 
 .logo:hover .logo-black {
   color: var(--blue-color);
-  transition: color 250ms var(--cubic-bezier),
-    background-color 250ms var(--cubic-bezier);
+  transition: var(--transition);
 }
 
 .logo:hover .logo-white {
   color: var(--blue-color);
-  transition: color 250ms var(--cubic-bezier),
-    background-color 250ms var(--cubic-bezier);
+ transition: var(--transition);
 }
 
 .group-header {
@@ -192,8 +191,7 @@ button {
 .button-studio:hover {
   color: var(--blue-color);
   background-color: var(--white-color);
-  transition: color 250ms var(--cubic-bezier),
-    background-color 250ms var(--cubic-bezier);
+ transition: var(--transition);
 }
 
 .our-strengths-text {
@@ -270,9 +268,8 @@ button {
   border-radius: 4px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: color 250ms var(--cubic-bezier),
-    background-color 250ms var(--cubic-bezier);
+   1px 4px 6px rgba(0, 0, 0, 0.16);
+ transition: var(--transition); 
 }
 .description-person {
   background: var(--light-gray-color);
@@ -347,8 +344,7 @@ button {
 .customers li:focus {
   color: var(--blue-color);
   border: 1px solid var(--blue-color);
-  transition: color 250ms var(--cubic-bezier),
-    background-color 250ms var(--cubic-bezier);
+ transition: var(--transition);
 }
 .customers-icon-box {
   box-sizing: border-box;
@@ -407,8 +403,7 @@ button {
 .social-icons-box li:hover {
   background-color: var(--blue-color);
   color: var(--white-color);
-  transition: color 250ms var(--cubic-bezier),
-    background-color 250ms var(--cubic-bezier);
+  transition: var(--transition);
 }
 
 .social-icons-box svg {
